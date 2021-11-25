@@ -16,7 +16,7 @@ export function union(...args: any[]) {
   return result;
 }
 
-export function isempty(list: any) {
+export function isEmpty(list: any) {
   var answer = Object.prototype.toString.call(list);
   if (list instanceof Array) {
     return false;
