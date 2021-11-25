@@ -1,8 +1,8 @@
-### .without(傳統模式)
+# .without(傳統模式)
 
 ## 先寫程式再寫測試
 
-# 程式部分
+### 程式部分
 
 ```
 export function without(list: any[], a: number) {
@@ -14,7 +14,7 @@ export function without(list: any[], a: number) {
 }
 ```
 
-# 測試部分
+### 測試部分
 
 ```
 Deno.test("without", () => {
@@ -22,7 +22,7 @@ Deno.test("without", () => {
 });
 ```
 
-# 執行結果
+### 執行結果
 
 ```
 PS D:\s\sa110a\test2\example> deno run .\ex1.ts
@@ -30,11 +30,11 @@ Check file:///D:/s/sa110a/test2/example/ex1.ts
 [ 1, 3 ]
 ```
 
-### .union(TDD 模式)
+# .union(TDD 模式)
 
 ## 先寫測試再寫程式
 
-# 測試部分
+### 測試部分
 
 ```
 Deno.test("union", () => {
@@ -42,7 +42,7 @@ Deno.test("union", () => {
 });
 ```
 
-# 程式部分
+### 程式部分
 
 ```
 export function union(...args: any[]) {
@@ -57,7 +57,7 @@ export function union(...args: any[]) {
 }
 ```
 
-# 執行結果
+### 執行結果
 
 ```
 PS D:\s\sa110a\test2\example> deno run .\ex1.ts
@@ -65,11 +65,11 @@ Check file:///D:/s/sa110a/test2/example/ex1.ts
 [ 2, 1, 4 ]
 ```
 
-### .isEmpty(BDD 模式)
+# .isEmpty(BDD 模式)
 
 ## 較口語化，較易懂，先寫程式再寫測試
 
-# 程式部分
+### 程式部分
 
 ```
 export function isEmpty(list: any) {
@@ -90,7 +90,7 @@ export function isEmpty(list: any) {
 }
 ```
 
-# 測試部分
+### 測試部分
 
 ```
 Deno.test("isEmpty", () => {
@@ -99,7 +99,7 @@ Deno.test("isEmpty", () => {
 });
 ```
 
-# 執行結果
+### 執行結果
 
 ```
 PS D:\s\sa110a\test2\example> deno run .\ex1.ts
